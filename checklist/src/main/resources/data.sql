@@ -1,0 +1,12 @@
+drop table if exists question;
+create table question(id int(10) IDENTITY(1,1) ,audit_type varchar(20),question varchar(500));
+INSERT INTO question (id ,audit_type,question) VALUES(1,'Internal','Have all Change requests followed SDLC before PROD move?');
+INSERT INTO question (id,audit_type,question) VALUES(2,'Internal','Have all Change requests been approved by the application owner?');
+INSERT INTO question (id,audit_type,question) VALUES(3,'Internal','Are all artifacts like CR document, Unit test cases available?');
+INSERT INTO question (id,audit_type,question) VALUES(4,'Internal','Is the SIT and UAT sign-off available?');
+INSERT INTO question (id,audit_type,question) VALUES(5,'Internal','Is data deletion from the system done with application owner approval?');
+INSERT INTO question (id,audit_type,question) VALUES(6,'SOX','Have all Change requests followed SDLC before PROD move?');
+INSERT INTO question (id,audit_type,question) VALUES(7,'SOX','Have all Change requests been approved by the application owner?');
+INSERT INTO question (id,audit_type,question) VALUES(8,'SOX','For a major change, was there a database backup taken before and after PROD move?');
+INSERT INTO question (id,audit_type,question) VALUES(9,'SOX','Has the application owner approval obtained while adding a user to the system?');
+INSERT INTO question (id,audit_type,question) VALUES(10,'SOX','Is data deletion from the system done with application owner approval?');

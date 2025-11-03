@@ -1,0 +1,15 @@
+
+<table class="table" >
+   
+    <tr *ngFor="let projectAudit of project.auditDetails" >
+        <td >{{project.projectId}}</td>
+        <td >{{project.projectName}}</td>
+        <td>{{project.projectManagerName}}</td>
+        <td>{{project.applicationOwnername}}</td>
+        <td>{{projectAudit.auditType}}</td>
+        <td>{{projectAudit.auditDate}}</td>
+        <td>{{projectAudit.executionStatus}}</td>
+        <td>{{projectAudit.remedialAction}}</td>
+    </tr>
+
+</table>

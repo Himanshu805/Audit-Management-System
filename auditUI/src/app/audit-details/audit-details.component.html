@@ -1,0 +1,15 @@
+<app-header></app-header>
+<table class="table">
+    <tr>
+        <th scope="col">Project Id</th>
+        <th scope="col">Project Name</th>
+        <th scope="col">ManagerName</th>
+        <th scope="col">Application OwnerName</th>
+        <th scope="col">Audit Type</th>
+        <th scope="col">Audit Date</th>
+        <th scope="col">Execution Status</th>
+        <th scope="col">Remedial Action</th>
+    </tr>
+    
+</table>
+<app-audit-details-each *ngFor="let project of projects" [project]="project"></app-audit-details-each>

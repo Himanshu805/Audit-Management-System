@@ -1,0 +1,15 @@
+
+.table{
+    table-layout: fixed;
+
+}
+td {
+    border: 1px solid #ddd;
+    background-color: #ccd3b1;
+    text-align: center;
+
+  }
+  
+  
+  
+  td:hover {background-color: #ddd;}
